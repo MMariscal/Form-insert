@@ -15,29 +15,31 @@
 
 <table style="color:#000099;width:400px;">
 	<tr style="background:#9BB;">
-		<td>Modelo</td>
-		<td>Medidas</td>
-		<td>Uso</td>
-		<td>Serie</td>
-		<td>Color</td>
-		<td>Aplicacion</td>
-		<td>Estilo</td>
-		<td>Imagen</td>
-		<td>Otros</td>
+	    <td>idPIEZA</td>
+		<td>MODELO</td>
+		<td>MEDIDAS</td>
+		<td>USO</td>
+		<td>SERIE</td>
+		<td>COLOR</td>
+		<td>APLICACION</td>
+		<td>ESTILO</td>
+		<td>IMAGEN</td>
+		<td>OTROS</td>
 	</tr>
 
 <?php
     while($row = mysql_fetch_array($sql)){
         echo "<tr>";
-        echo "<td>".$row['modelo']."</td>";
-        echo "<td>".$row['medidas']."</td>";
-        echo "<td>".$row['uso']."</td>";
-        echo "<td>".$row['serie']."</td>";
-        echo "<td>".$row['color']."</td>";
-        echo "<td>".$row['aplicacion']."</td>";
-        echo "<td>".$row['estilo']."</td>";
-        echo "<td>".$row['imagen']."</td>";
-        echo "<td>".$row['otros']."</td>";
+        echo "<td>".$row['idPIEZA']."</td>";
+        echo "<td>".$row['MODELO']."</td>";
+        echo "<td>".$row['MEDIDAS']."</td>";
+        echo "<td>".$row['USO']."</td>";
+        echo "<td>".$row['SERIE']."</td>";
+        echo "<td>".$row['COLOR']."</td>";
+        echo "<td>".$row['APLICACION']."</td>";
+        echo "<td>".$row['ESTILO']."</td>";
+        echo "<td>".$row['IMAGEN']."</td>";
+        echo "<td>".$row['OTROS']."</td>";
         echo "</tr>";
     }
 ?>

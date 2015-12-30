@@ -36,6 +36,7 @@ function enviarDatosPieza(){
   estilo = document.nueva_pieza.estilo.value;
   imagen = document.nueva_pieza.imagen.value;
   otros = document.nueva_pieza.otros.value;
+
   //instanciamos el objetoAjax
   ajax=objetoAjax();
 
@@ -55,8 +56,9 @@ function enviarDatosPieza(){
 	}
  }
 	ajax.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+
 	//enviando los valores a registro.php para que inserte los datos
-	ajax.send("pieza=" +modelo+ "&medidas=" +medidas+ "&uso=" +uso+ "&serie=" +serie+ "&color=" +color+ "&aplicacion=" +aplicacion+ "&estilo=" +estilo+ "&imagen=" +imagen+ "&otros=" +otros)
+	ajax.send("modelo=" +modelo+ "&medidas=" +medidas+ "&uso=" +uso+ "&serie=" +serie+ "&color=" +color+ "&aplicacion=" +aplicacion+ "&estilo=" +estilo+ "&imagen=" +imagen+ "&otros=" +otros)
 }
 
 //función para limpiar los campos
