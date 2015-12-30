@@ -27,7 +27,7 @@ function enviarDatosPieza(){
   divResultado = document.getElementById('resultado');
 
   //recogemos los valores de los inputs
-  nombre = document.nueva_pieza.nombre.value;
+  modelo = document.nueva_pieza.modelo.value;
   medidas = document.nueva_pieza.medidas.value;
   uso = document.nueva_pieza.uso.value;
   serie = document.nueva_pieza.serie.value;
@@ -56,12 +56,12 @@ function enviarDatosPieza(){
  }
 	ajax.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
 	//enviando los valores a registro.php para que inserte los datos
-	ajax.send("pieza=" +nombre+ "&medidas=" +medidas+ "&uso=" +uso+ "&serie=" +serie+ "&color=" +color+ "&aplicacion=" +aplicacion+ "&estilo=" +estilo+ "&imagen=" +imagen+ "&otros=" +otros)
+	ajax.send("pieza=" +modelo+ "&medidas=" +medidas+ "&uso=" +uso+ "&serie=" +serie+ "&color=" +color+ "&aplicacion=" +aplicacion+ "&estilo=" +estilo+ "&imagen=" +imagen+ "&otros=" +otros)
 }
 
 //función para limpiar los campos
 function LimpiarCampos(){
-  document.nueva_pieza.nombre.value="";
+  document.nueva_pieza.modelo.value="";
   document.nueva_pieza.medidas.value="";
   document.nueva_pieza.uso.value="";
   document.nueva_pieza.serie.value="";

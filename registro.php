@@ -13,7 +13,7 @@
     mysql_select_db($bd_base, $con);
 
     //variables POST
-    $nombre = $_POST['nombre'];
+    $nombre = $_POST['modelo'];
     $medidas = $_POST['medidas'];
     $uso = $_POST['uso'];
     $serie = $_POST['serie'];
@@ -24,7 +24,7 @@
     $otros = $_POST['otros'];
 
     //registra los datos del empleados
-    $sql = "INSERT INTO pieza (modelo, medidas, uso, serie, color, aplicacion, estilo, imagen, otros) VALUES ('$nombre', '$medidas', '$uso', '$serie', '$color', '$aplicacion', '$estilo', '$imagen', '$otros')";
+    $sql = "INSERT INTO pieza (modelo, medidas, uso, serie, color, aplicacion, estilo, imagen, otros) VALUES ('$modelo', '$medidas', '$uso', '$serie', '$color', '$aplicacion', '$estilo', '$imagen', '$otros')";
     mysql_query($sql, $conexion) or die('Error. '.mysql_error());
 
 ?>
