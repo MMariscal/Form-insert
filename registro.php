@@ -1,23 +1,30 @@
 <?php
 
+    include('consulta.php');
+
     //Configuracion de la conexion a base de datos
     $bd_host = "localhost";
     $bd_usuario = "user";
     $bd_password = "123456";
     $bd_base = "NTCSerie22";
 
-    $con = mysql_connect($bd_host, $bd_usuario, $bd_password);
+    $conexion = mysql_connect($bd_host, $bd_usuario, $bd_password);
 
     mysql_select_db($bd_base, $con);
 
     //variables POST
-    $nom = $_POST['nombre'];
-    $ape = $_POST['apellido'];
-    $web = $_POST['web'];
+    $nombre = $_POST['nombre'];
+    $medidas = $_POST['medidas'];
+    $uso = $_POST['uso'];
+    $serie = $_POST['serie'];
+    $color = $_POST['color'];
+    $aplicacion = $_POST['aplicacion'];
+    $estilo = $_POST['estilo'];
+    $imagen = $_POST['imagen'];
+    $otros = $_POST['otros'];
 
     //registra los datos del empleados
-    $sql = "INSERT INTO empleados (nombre, apellido, web) VALUES ('$nom', '$ape', '$web')";
-    mysql_query($sql,$con) or die('Error. '.mysql_error());
+    $sql = "INSERT INTO pieza (modelo, medidas, uso, serie, color, aplicacion, estilo, imagen, otros) VALUES ('$nombre', '$medidas', '$uso', '$serie', '$color', '$aplicacion', '$estilo', '$imagen', '$otros')";
+    mysql_query($sql, $conexion) or die('Error. '.mysql_error());
 
-    include('consulta.php');
 ?>
