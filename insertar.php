@@ -4,6 +4,7 @@
     </HEAD>
     <BODY>
         <?
+        $query = $_POST['forminserta'];
         //Conexion con la base
         mysql_connect("localhost","root","");
 
@@ -11,7 +12,7 @@
         mysql_select_db("NTCSerie22");
 
         //Ejecucion de la sentencia SQL
-        mysql_query("INSERT INTO `pieza` (`idPIEZA`, `MODELO`, `MEDIDAS`, `USO`, `SERIE`, `COLOR`, `APLICACION`, `ESTILO`, `IMAGEN`, `OTROS`) VALUES (NULL, '$modelo', '$medidas', '$uso', '$serie', '$color', '$aplicacion', '$estilo', NULL, NULL)");
+        $query = mysql_query("INSERT INTO `pieza` (`idPIEZA`, `MODELO`, `MEDIDAS`, `USO`, `SERIE`, `COLOR`, `APLICACION`, `ESTILO`, `IMAGEN`, `OTROS`) VALUES (NULL, '$modelo', '$medidas', '$uso', '$serie', '$color', '$aplicacion', '$estilo', NULL, NULL)");
 
         ?>
         <h1><div align="center">Registro Insertado</div></h1>
