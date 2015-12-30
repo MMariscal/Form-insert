@@ -36,7 +36,7 @@
                     </tr>
                     <tr>
                         <td>&nbsp;</td><td><label><input type="submit" name="Submit" value="Grabar" /></label>
-                        <label><input type="submit" name="Reload" value="Recargar" /></label></td>
+                        <label><input type="submit" name="Reload" value="Recargar" onclick="avascript:location.reload()"/></label></td>
                     </tr>
                 </table>
 		</form>
