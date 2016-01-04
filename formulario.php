@@ -1,6 +1,6 @@
 <html>
   <head>
-  <title>Registro de empleados</title>
+  <title>Inserción de piezas</title>
   <script language="JavaScript" type="text/javascript" src="ajax.js"></script>
   </head>
   <body>
