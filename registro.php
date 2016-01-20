@@ -6,7 +6,7 @@
     $bd_host = "localhost";
     $bd_usuario = "user";
     $bd_password = "123456";
-    $bd_base = "NTCSerie22";
+    $bd_base = "NTCSerie2";
 
     $conexion = mysql_connect($bd_host, $bd_usuario, $bd_password);
 

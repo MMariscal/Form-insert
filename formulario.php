@@ -1,12 +1,16 @@
-<html>
+<!DOCTYPE html>
+ <html>
   <head>
-  <title>Inserción de piezas</title>
-  <script language="JavaScript" type="text/javascript" src="ajax.js"></script>
+      <title>Inserción de piezas</title>
+      <meta charset="UTF-8" />
+      <link rel="stylesheet" href="style.css">
+      <script language="JavaScript" type="text/javascript" src="ajax.js"></script>
+
   </head>
   <body>
 		<form name="nueva_pieza" action="" onsubmit="enviarDatosPieza(); return false">
 			<h2>Formulario Nuevas Piezas</h2>
-				<table>
+				<table id="formulario">
                     <tr>
                         <td>Modelo</td><td><label><input name="modelo" type="text" /></label></td>
                     </tr>
@@ -35,7 +39,8 @@
                         <td>Otros</td><td><label><input name="otros" type="text" /></label></td>
                     </tr>
                     <tr>
-                        <td>&nbsp;</td><td><label><input type="submit" name="Submit" value="Grabar" /></label>
+                        <td>&nbsp;</td><td><label><input type="submit" name="Submit" value="Insertar" /></label>
+                        &nbsp;<label><input type="submit" name="Submit" value="Modificar" /></label>
                         <label><input type="submit" name="Reload" value="Recargar" onclick="avascript:location.reload()"/></label></td>
                     </tr>
                 </table>

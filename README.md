@@ -7,3 +7,4 @@ v1.     Crear formulario básico para la inserción de datos en la BBDD customiz
 
 v2.     Crear formulario usando AJAX para el intercambio de datos.
 v2.1.   Solucionar pequeños problemas de conectividad y comprobar funcionamiento.
+v2.2.   Añadir funciones INSERT y VIEW

@@ -4,7 +4,7 @@
     $bd_host = "localhost";
     $bd_usuario = "user";
     $bd_password = "123456";
-    $bd_base = "NTCSerie22";
+    $bd_base = "NTCSerie2";
 
 	$con = mysql_connect($bd_host, $bd_usuario, $bd_password);
 	mysql_select_db($bd_base, $con);
@@ -13,8 +13,8 @@
     $sql=mysql_query("SELECT * FROM pieza", $con);
 ?>
 
-<table style="color:#000099;width:400px;">
-	<tr style="background:#9BB;">
+<table id="consulta">
+	<tr id="trconsulta">
 	    <td>idPIEZA</td>
 		<td>MODELO</td>
 		<td>MEDIDAS</td>
